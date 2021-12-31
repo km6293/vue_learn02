@@ -35,13 +35,30 @@
     </div>
   </div>
 </nav>
+
+<div class= "nontainer mt-4">
+  <h5>Developer Blog</h5>
+  <p>Vue</p>
+</div>
+
+<List :blogData="blogData"/>
+
 </template>
 
 <script>
 
+import List from './components/List.vue';
+import blog from './assets/blog';
+
 export default {
   name: 'App',
+  data(){
+    return{
+      blogData : blog
+    }
+  },
   components: {
+    List,
   }
 }
 </script>
