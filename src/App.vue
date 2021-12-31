@@ -36,29 +36,28 @@
   </div>
 </nav>
 
-<div class= "nontainer mt-4">
-  <h5>Developer Blog</h5>
-  <p>Vue</p>
-</div>
+<router-link to="/list">List Page</router-link><br/>
+<router-link to="/">Home Page</router-link>
 
-<List :blogData="blogData"/>
+<router-view :blog="blog"></router-view>
+<!-- <List :blog="blog"/> -->
 
 </template>
 
 <script>
 
-import List from './components/List.vue';
+// import List from './components/List.vue';
 import blog from './assets/blog';
 
 export default {
   name: 'App',
   data(){
     return{
-      blogData : blog
+      blog : blog
     }
   },
   components: {
-    List,
+    // List,
   }
 }
 </script>

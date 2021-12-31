@@ -1,15 +1,15 @@
 <template>
   <div>
-    <h5>{{blogData[0].title}}</h5>
-    <p>{{blogData[0].date}}</p>
+    <h5>{{blog[0].title}}</h5>
+    <p>{{blog[0].date}}</p>
   </div>
   <div>
-    <h5>{{blogData[1].title}}</h5>
-    <p>{{blogData[1].date}}</p>
+    <h5>{{blog[1].title}}</h5>
+    <p>{{blog[1].date}}</p>
   </div>
     <div>
-    <h5>{{blogData[2].title}}</h5>
-    <p>{{blogData[2].date}}</p>
+    <h5>{{blog[2].title}}</h5>
+    <p>{{blog[2].date}}</p>
   </div>
 
 </template>
@@ -18,7 +18,7 @@
 export default {
   name: 'list',
   props : {
-    blogData : Array
+    blog : Array
   }
 }
 </script>
