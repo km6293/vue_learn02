@@ -37,9 +37,12 @@
 </nav>
 
 <router-link to="/list">List Page</router-link><br/>
-<router-link to="/">Home Page</router-link>
+<router-link to="/">Home Page</router-link><br/>
+<router-link to="/detail">Detail Page</router-link>
 
-<router-view :blog="blog"></router-view>
+<div class="mt-4">
+  <router-view :blog="blog"></router-view>
+</div>
 <!-- <List :blog="blog"/> -->
 
 </template>
